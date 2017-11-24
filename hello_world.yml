@@ -2,7 +2,7 @@
   hosts: all
   tasks:
     - name: Set variable
-      facts:
+      set_fact:
         something: Juniper
     - name: Hello Message
       debug:
