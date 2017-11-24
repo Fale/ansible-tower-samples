@@ -1,6 +1,9 @@
 - name: Hello World Sample
   hosts: all
   tasks:
+    - name: Set variable
+      facts:
+        something: Juniper
     - name: Hello Message
       debug:
         msg: "Hello {{ something }}!"
